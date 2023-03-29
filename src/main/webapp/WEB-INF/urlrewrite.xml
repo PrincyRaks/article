@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite
+        PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+<urlrewrite>
+    <rule>
+        <from>^/sites-articles/accueil.gg$</from>
+        <to>/</to>
+    </rule>
+    <rule>
+        <from>^/sites-articles/admin-form-page.gg$</from>
+        <to>/FormArticle</to>
+    </rule>
+    <rule>
+        <from>^/sites-articles/admin-create-article.gg$</from>
+        <to>/createArticle</to>
+    </rule>
+    <rule>
+        <from>^/sites-articles/page-article-([a-z0-9]*).gg$</from>
+        <to>/getById/$1</to>
+    </rule>
+</urlrewrite>
